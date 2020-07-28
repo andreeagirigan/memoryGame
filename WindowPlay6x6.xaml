@@ -1,0 +1,217 @@
+﻿<Window x:Class="MemoryGame.WindowPlay6x6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        Title="WindowPlay6x6" Height="800" Width="1100" Background="#0088cc">
+    <Window.Resources>
+
+        <Color x:Key="Color1">#FFA8EDEA</Color>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border BorderThickness="1" BorderBrush="#FFA8A8A8">
+
+        <Grid Name="PrincipalGrid">
+
+
+
+
+
+
+            <Image Name="MyImage" Margin="57,15,964,645"/>
+            <TextBlock x:Name="playerName" HorizontalAlignment="Left" Margin="134,31,0,655" TextWrapping="Wrap" FontSize="24" FontFamily="Segoe UI Light" RenderTransformOrigin="-0.217,0.373" Width="170">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Red" ShadowDepth="4" BlurRadius="30" RenderingBias="Quality"/>
+                </TextBlock.Effect><Run Text=""/><LineBreak/><Run/></TextBlock>
+
+
+            <TextBlock x:Name="countdown" HorizontalAlignment="Left" Margin="668,32,0,700" TextWrapping="Wrap" FontSize="24" FontFamily="Segoe UI Light" RenderTransformOrigin="-0.217,0.373" Width="28">
+               <Run Text="10"/><LineBreak/><Run/></TextBlock>
+
+            <Grid Name="imageTableGrid" Margin="-240,0,117,0">
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage1" Click="btnImage1_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="14,102,584,476" >
+
+                    <Image Name="image1" Source="Images/crocodil.jpg" Uid="1"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage2" Click="btnImage2_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="480,102,118,476">
+
+
+                    <Image Name="image2" Source="Images/elefant.jpg" Uid="2"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage3" Click="btnImage3_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="324,102,274,476">
+
+
+                    <Image Name="image3" Source="Images/girafa.jpg" Uid="3"/>
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage4" Click="btnImage4_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="170,102,428,476">
+
+                    <Image Name="image4" Source="Images/hipopotam.jpg" Uid="4"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage5" Click="btnImage5_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="14,256,584,322">
+
+
+                    <Image Name="image5" Source="Images/leu.jpg" Uid="5"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage6" Click="btnImage6_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="480,256,118,322">
+
+
+                    <Image Name="image6" Source="Images/maimuta.jpg" Uid="6"/>
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage7" Click="btnImage7_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="324,256,274,322">
+
+
+                    <Image Name="image7" Source="Images/tigru.jpg" Uid="7"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage8" Click="btnImage8_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="170,256,428,322">
+
+                    <Image Name="image8" Source="Images/zebra.jpg" Uid="8"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage9" Click="btnImage9_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="14,412,584,166">
+
+
+                    <Image Name="image9" Source="Images/zebra.jpg" Uid="9"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage10" Click="btnImage10_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="480,412,118,166">
+
+
+                    <Image Name="image10" Source="Images/tigru.jpg" Uid="10"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage11" Click="btnImage11_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="324,412,274,166">
+
+
+                    <Image Name="image11" Source="Images/elefant.jpg" Uid="11"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage12" Click="btnImage12_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="170,412,428,166">
+
+                    <Image Name="image12" Source="Images/girafa.jpg" Uid="12"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage13" Click="btnImage13_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="14,566,584,12">
+
+
+                    <Image Name="image13" Source="Images/crocodil.jpg" Uid="1"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage14" Click="btnImage14_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="480,566,118,12">
+
+                    <Image Name="image14" Source="Images/leu.jpg" Uid="2"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage15" Click="btnImage15_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="324,566,274,12">
+
+
+                    <Image Name="image15" Source="Images/maimuta.jpg" Uid="3"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage16" Click="btnImage16_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="170,566,428,12">
+
+                    <Image Name="image16" Source="Images/tigru.jpg" Uid="4"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage17" Click="btnImage17_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,566,28,10">
+
+                    <Image Name="image17" Source="Images/zebra.jpg" Uid="5"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage18" Click="btnImage18_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,257,28,9">
+
+                    <Image Name="image18" Source="Images/crocodil.jpg" Uid="6"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage19" Click="btnImage19_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,-55,28,9">
+
+                    <Image Name="image19" Source="Images/elefant.jpg" Uid="7"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage20" Click="btnImage20_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,-362,28,10">
+
+                    <Image Name="image20" Source="Images/girafa.jpg" Uid="8"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage21" Click="btnImage21_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,566,-280,10">
+
+                    <Image Name="image21" Source="Images/hipopotam.jpg" Uid="9"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage22" Click="btnImage22_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,257,-280,9">
+
+                    <Image Name="image22" Source="Images/leu.jpg" Uid="10"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage23" Click="btnImage23_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,-55,-280,9">
+
+                    <Image Name="image23" Source="Images/hipopotam.jpg" Uid="11"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="btnImage24" Click="btnImage24_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="150" Width="150" Margin="700,-362,-280,10">
+
+                    <Image Name="image24" Source="Images/maimuta.jpg" Uid="12"/>
+
+                </Button>
+            </Grid>
+
+
+
+            <TextBlock x:Name="gameCountDownPlay" Margin="980,152,14,555" TextWrapping="Wrap" FontFamily="Segoe UI Semibold" RenderTransformOrigin="-0.217,0.373" Foreground="BlueViolet" FontWeight="Bold" >
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.015"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="gameCountDownBeforeStart" Margin="0,30,535,0" TextWrapping="Wrap" FontSize="28" FontFamily="Segoe UI Semibold" RenderTransformOrigin="-0.217,0.373" Width="57" Foreground="BlueViolet" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Right" Height="38"><Run Text="100"/><LineBreak/><Run/></TextBlock>
+
+        </Grid>
+
+    </Border>
+</Window>

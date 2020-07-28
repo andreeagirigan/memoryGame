@@ -1,0 +1,18 @@
+﻿<Window x:Class="MemoryGame.WindowPlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        Title="WindowPlay" Height="450" Width="800" Background = "#80ccff" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Selectati &#xD;&#xA; nivelul &#xD;&#xA;  dorit" HorizontalAlignment="Left" Margin="119,125,0,0" VerticalAlignment="Top" Height="150" Width="140" FontSize="34"/>
+        <Button Content="Incepator (4x4)" HorizontalAlignment="Left" Margin="455,125,0,0" VerticalAlignment="Top" Width="120" FontSize="16" RenderTransformOrigin="0.463,4.227" Height="32" Background="#0088cc" Foreground ="White" Click="Button_ClickIncepator" />
+        <Button Content="Mediu (6x6)" HorizontalAlignment="Left" Margin="455,189,0,0" VerticalAlignment="Top" Width="120" FontSize="16" RenderTransformOrigin="0.463,4.227" Height="32" Background="#0088cc" Foreground ="White" Click="Button_ClickMediu" />
+        <Button Content="Avansat" HorizontalAlignment="Left" Margin="455,252,0,0" VerticalAlignment="Top" Width="120" FontSize="16" RenderTransformOrigin="0.463,4.227" Height="32" Background="#0088cc" Foreground ="White" Click="Button_ClickAvansat"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="319,67,0,0" VerticalAlignment="Top" Width="87" FontSize="12" RenderTransformOrigin="0.463,4.227" Height="30" Background="#0088cc" Foreground ="White" Click="Button_ClickBack"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="627,67,0,0" VerticalAlignment="Top" Width="87" FontSize="12" RenderTransformOrigin="0.463,4.227" Height="30" Background="#0088cc" Foreground ="White" Click="Button_ClickHelp" />
+
+    </Grid>
+</Window>

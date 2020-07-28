@@ -1,0 +1,24 @@
+﻿<Window x:Class="MemoryGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background = "#80ccff" ResizeMode="NoResize">
+    <Grid>
+
+        <Image HorizontalAlignment="Left" Height="303" Margin="200,24,0,0" VerticalAlignment="Top" Width="400" Source="C:/Users/andreea/source/repos/MemoryGame/MemoryGame/Images/memory.jpg"/>
+
+        <Button x:Name="ButtonExisting" Content ="Log in" HorizontalAlignment="Left" Margin="40,350,0,0" VerticalAlignment="Top" Width="80" Background="#0088cc" Foreground ="White" Click="ButtonExisting_Click"/>
+        <Button x:Name="ButtonNew" Content ="New user" HorizontalAlignment="Left" Margin="200,350,0,0" VerticalAlignment="Top" Width="80" Background="#0088cc" Foreground ="White" Click="ButtonNew_Click"/>
+
+        <Button x:Name="ButtonPlay" Content ="Play" HorizontalAlignment="Left" Margin="520,350,0,0" VerticalAlignment="Top" Width="80" Background="#0088cc" Foreground ="White" Click="ButtonPlay_Click"/>
+
+
+        <Button x:Name="ButtonCancel" Content ="Cancel" HorizontalAlignment="Left" Margin="680,350,0,0" VerticalAlignment="Top" Width="80"  Background="#0088cc" Foreground ="White" Click="ButtonCancel_Click"/>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,232 @@
+﻿<Window x:Class="MemoryGame.Intermediate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+       Title="Intermediate" Height="700" Width="750" Background="#0088cc">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border BorderThickness="1" BorderBrush="#FFA8A8A8">
+        <Grid Name="AlDoileaNivel">
+            <TextBlock x:Name="countdown" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="688,53,10,0" TextWrapping="Wrap" FontSize="24" Foreground="Purple" FontFamily="Segoe UI Light" RenderTransformOrigin="-0.217,0.373" Width="42" Height="33" ><Run Text=" "/><Run Text=" 3"/><LineBreak/><Run/></TextBlock>
+
+            <Grid Name="imageTableGrid" Margin="-69,-168,-34,0" Height="836" VerticalAlignment="Bottom">
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului1" Click="imagineaButonului1_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="14,102,584,476">
+                    <Image Name="image1" Source="Images/caine.jpg" Uid="1"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului2" Click="imagineaButonului2_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="210,102,118,476">
+                    <Image Name="image2" Source="Images/elefant2.jpg" Uid="2"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului3" Click="imagineaButonului3_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="144,102,274,476">
+
+
+                    <Image Name="image3" Source="Images/cocos.jpg" Uid="3"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului4" Click="imagineaButonului4_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="80,102,428,476">
+
+                    <Image Name="image4" Source="Images/iepure.jpg" Uid="4"/>
+
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului5" Click="imagineaButonului5_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="14,156,584,322">
+
+
+                    <Image Name="image5" Source="Images/oaie.jpg" Uid="5"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului6" Click="imagineaButonului6_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="210,156,118,322">
+
+
+                    <Image Name="image6" Source="Images/maimuta2.jpg" Uid="6"/>
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului7" Click="imagineaButonului7_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="144,156,274,322">
+
+
+                    <Image Name="image7" Source="Images/porc.jpg" Uid="7"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului8" Click="imagineaButonului8_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="80,156,428,322">
+
+                    <Image Name="image8" Source="Images/vaca.jpg" Uid="8"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului9" Click="imagineaButonului9_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="14,212,584,166">
+
+
+                    <Image Name="image9" Source="Images/caine.jpg" Uid="1"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului10" Click="imagineaButonului10_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="210,212,118,166">
+
+
+                    <Image Name="image10" Source="Images/elefant2.jpg" Uid="2"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului11" Click="imagineaButonului11_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="144,212,274,166">
+
+
+                    <Image Name="image11" Source="Images/cocos.jpg" Uid="3"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului12" Click="imagineaButonului12_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="80,212,428,166">
+
+                    <Image Name="image12" Source="Images/iepure.jpg" Uid="4"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului13" Click="imagineaButonului13_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="14,266,584,12">
+
+
+                    <Image Name="image13" Source="Images/oaie.jpg" Uid="5"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului14" Click="imagineaButonului14_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="210,266,118,12">
+
+                    <Image Name="image14" Source="Images/maimuta2.jpg" Uid="6"/>
+
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului15" Click="imagineaButonului15_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="144,266,274,12">
+
+
+                    <Image Name="image15" Source="Images/porc.jpg" Uid="7"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului16" Click="imagineaButonului16_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="80,266,428,12">
+
+                    <Image Name="image16" Source="Images/vaca.jpg" Uid="8"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului17" Click="imagineaButonului17_Click" PreviewMouseDown="imagineaButonului1_PreviewMouseDown" Height="100" Width="100" Margin="430,102,118,476">
+                    <Image Name="image17" Source="Images/testoasa.jpg" Uid="15" />
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului18" Click="imagineaButonului18_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="430,156,118,322">
+                    <Image Name="image18" Source="Images/raton.jpg" Uid="13"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului19" Click="imagineaButonului19_Click" PreviewMouseDown="Button_PreviewMouseDown"  Height="100" Width="100" Margin="430,212,118,166">
+
+
+                    <Image Name="image19" Source="Images/papagal.jpg" Uid="11"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului20" Click="imagineaButonului20_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="430,266,118,12">
+
+                    <Image Name="image20" Source="Images/arici.jpg" Uid="9"/>
+
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului21" Click="imagineaButonului21_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="590,102,60,476">
+
+
+                    <Image Name="image21" Source="Images/vulpe.jpg" Uid="16"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului22" Click="imagineaButonului22_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="590,222,60,392">
+
+
+                    <Image Name="image22" Source="Images/soarece.jpg" Uid="14"/>
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului23" Click="imagineaButonului23_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="590,322,60,280">
+
+
+                    <Image Name="image23" Source="Images/pinguin.jpg" Uid="12"/>
+
+                </Button>
+
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului24" Click="imagineaButonului24_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="590,422,60,168">
+
+                    <Image Name="image24" Source="Images/bufnita.jpg" Uid="10"/>
+
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului25" Click="imagineaButonului25_Click" PreviewMouseDown="imagineaButonului1_PreviewMouseDown" Height="100" Width="100" Margin="590,522,60,56" >
+                    <Image Name="image25" Source="Images/panda.jpg" Uid="17"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului26" Click="imagineaButonului26_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="590,622,60,-56">
+
+                    <Image Name="image26" Source="Images/pisica.jpg" Uid="18"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului27" Click="imagineaButonului27_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="484,660,171,-18">
+
+
+                    <Image Name="image27" Source="Images/panda.jpg" Uid="17"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului28" Click="imagineaButonului28_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="484,554,171,88">
+
+
+                    <Image Name="image28" Source="Images/pisica.jpg" Uid="18"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului29" Click="imagineaButonului29_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="374,555,281,87">
+
+                    <Image Name="image29" Source="Images/arici.jpg" Uid="9"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului30" Click="imagineaButonului30_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="374,660,281,-18">
+
+                    <Image Name="image30" Source="Images/bufnita.jpg" Uid="10"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului31" Click="imagineaButonului31_Click" PreviewMouseDown="Button_PreviewMouseDown"  Height="100" Width="100" Margin="42,554,613,88">
+
+
+                    <Image Name="image31" Source="Images/papagal.jpg" Uid="11"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului32" Click="imagineaButonului32_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="262,554,393,88">
+                    <Image Name="image32" Source="Images/pinguin.jpg" Uid="12"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului33" Click="imagineaButonului33_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="262,660,393,-18">
+                    <Image Name="image33" Source="Images/raton.jpg" Uid="13"/>
+
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului34" Click="imagineaButonului34_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="154,554,501,88">
+                    <Image Name="image34" Source="Images/soarece.jpg" Uid="14"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului35" Click="imagineaButonului34_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="154,660,501,-18">
+                    <Image Name="image35" Source="Images/testoasa.jpg" Uid="15"/>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" x:Name="imagineaButonului36" Click="imagineaButonului35_Click" PreviewMouseDown="Button_PreviewMouseDown" Height="100" Width="100" Margin="42,660,613,-18">
+
+
+                    <Image Name="image36" Source="Images/vulpe.jpg" Uid="16"/>
+                </Button>
+
+            </Grid>
+            <TextBlock x:Name="gameCountDownPlay" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="672,160,0,0" TextWrapping="Wrap" FontFamily="Segoe UI Semibold"  Width="68" Foreground="Red" FontSize="15" FontWeight="Bold" Height="127"><Run Text="    "/><Run Text=" "/><Run Text="Mai "/><LineBreak/><Run Text="   "/><Run Text=" "/><Run Text="aveti"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="  "/><Run Text="secunde"/></TextBlock>
+            <TextBlock x:Name="gameCountDownBeforeStart" Margin="679,202,10,0" TextWrapping="Wrap" FontSize="28" FontFamily="Segoe UI Semibold" RenderTransformOrigin="-0.217,0.373" Width="51" Foreground="Red" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center" Height="38"><Run Text="120"/><LineBreak/><Run/></TextBlock>
+
+        </Grid>
+    </Border>
+</Window>
+
